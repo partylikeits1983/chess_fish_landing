@@ -35,7 +35,7 @@ export default async function OG() {
             fontSize: "100px",
             fontFamily: "SF Pro",
             background:
-              "linear-gradient(to bottom right, #000000 21.66%, #78716c 86.47%)",
+              "linear-gradient(to bottom right, #000000 21.66%, #170B09 86.47%)",
             backgroundClip: "text",
             color: "transparent",
             lineHeight: "5rem",
