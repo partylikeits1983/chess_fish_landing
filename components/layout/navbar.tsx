@@ -22,15 +22,19 @@ export default function NavBar({ session }: { session: Session | null }) {
         } z-30 transition-all`}
       >
         <div className="mx-5 flex h-16 max-w-screen-xl items-center justify-between xl:mx-auto">
-          <Link href="/" className="flex items-center font-display text-2xl">
-          </Link>
+          <Link
+            href="/"
+            className="flex items-center font-display text-2xl"
+          ></Link>
           <div>
             {session ? (
               <UserDropdown session={session} />
             ) : (
               <button
-              className="rounded-full border border-black bg-black p-1.5 px-4 text-sm text-white transition-all hover:bg-white hover:text-black"
-              onClick={() => window.location.href = "https://www.chess.fish/"}
+                className="rounded-full border border-black bg-black p-1.5 px-4 text-sm text-white transition-all hover:bg-white hover:text-black"
+                onClick={() =>
+                  (window.location.href = "https://www.chess.fish/")
+                }
               >
                 Open App
               </button>

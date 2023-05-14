@@ -7,7 +7,6 @@ import ComponentGrid from "@/components/home/component-grid";
 import Image from "next/image";
 
 export default async function Home() {
-
   return (
     <>
       <div className="z-10 w-full max-w-xl px-5 xl:px-0">
@@ -32,9 +31,7 @@ export default async function Home() {
           className="mt-6 animate-fade-up text-center text-gray-500 opacity-0 md:text-xl"
           style={{ animationDelay: "0.25s", animationFillMode: "forwards" }}
         >
-          <Balancer>
-            Welcome to the Chess Revolution
-          </Balancer>
+          <Balancer>Welcome to the Chess Revolution</Balancer>
         </p>
         <div
           className="mx-auto mt-6 flex animate-fade-up items-center justify-center space-x-5 opacity-0"
@@ -61,32 +58,29 @@ export default async function Home() {
             </p>
           </a>
         </div>
-              <img
+        <img
           src={new URL("../public/stockfish.png", import.meta.url).toString()}
           alt="Stockfish Icon"
           // style={{ maxWidth: '40%', maxHeight: '40%' }}
         />
       </div>
-
     </>
   );
 }
 
 const products = [
   {
-    title: 'Product 1',
-    description: 'This is a description of product 1.',
-    image: 'url-to-image-1.jpg',
+    title: "Product 1",
+    description: "This is a description of product 1.",
+    image: "url-to-image-1.jpg",
   },
   {
-    title: 'Product 2',
-    description: 'This is a description of product 2.',
-    image: 'url-to-image-2.jpg',
+    title: "Product 2",
+    description: "This is a description of product 2.",
+    image: "url-to-image-2.jpg",
   },
   //...other products
-]
-
-
+];
 
 const features = [
   {
@@ -94,10 +88,12 @@ const features = [
     description:
       "Pre-built beautiful, a11y-first components, powered by [Tailwind CSS](https://tailwindcss.com/), [Radix UI](https://www.radix-ui.com/), and [Framer Motion](https://framer.com/motion)",
     large: true,
-    demo: <img
-          src={new URL("../public/position.png", import.meta.url).toString()}
-          alt="Precedent Logo"
-        />
+    demo: (
+      <img
+        src={new URL("../public/position.png", import.meta.url).toString()}
+        alt="Precedent Logo"
+      />
+    ),
   },
 
   {
@@ -105,5 +101,5 @@ const features = [
     description:
       "Built on [Next.js](https://nextjs.org/) primitives like `@next/font` and `next/image` for stellar performance.",
     demo: <WebVitals />,
-  }
+  },
 ];
