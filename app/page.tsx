@@ -22,7 +22,7 @@ export default async function Home() {
           </p>
         </a>
         <h1
-          className="animate-fade-up bg-gradient-to-br from-black to-black  bg-clip-text text-center font-display text-4xl font-bold tracking-[-0.02em] text-transparent opacity-0 drop-shadow-sm md:text-7xl md:leading-[5rem]"
+          className="animate-fade-up bg-gradient-to-br from-white to-white  bg-clip-text text-center font-display text-4xl font-bold tracking-[-0.02em] text-transparent opacity-0 drop-shadow-sm md:text-7xl md:leading-[5rem]"
           style={{ animationDelay: "0.15s", animationFillMode: "forwards" }}
         >
           <Balancer>Play Chess on the Blockchain</Balancer>
@@ -54,7 +54,7 @@ export default async function Home() {
             <Github />
             <p>
               <span className="hidden sm:inline-block">Star on </span> GitHub{" "}
-              <span className="font-semibold">{234}</span>
+             
             </p>
           </a>
         </div>

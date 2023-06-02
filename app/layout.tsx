@@ -20,7 +20,7 @@ export const metadata = {
   metadataBase: new URL("https://precedent.dev"),
   themeColor: "#FFF",
 };
-
+// <div className="fixed h-screen w-full bg-gradient-to-br from-indigo-100 via-white to-pink-100" />
 export default async function RootLayout({
   children,
 }: {
@@ -29,7 +29,7 @@ export default async function RootLayout({
   return (
     <html lang="en">
       <body className={cx(sfPro.variable, inter.variable)}>
-        <div className="fixed h-screen w-full bg-gradient-to-br from-indigo-100 via-white to-pink-100" />
+        <div className="fixed h-screen w-full bg-gradient-to-br from-fuchsia-800 to-pink-800" />
         <Suspense fallback="...">
           {/* @ts-expect-error Server Component */}
           <Nav />
