@@ -33,7 +33,9 @@ export default async function Home() {
           className="mt-6 animate-fade-up text-center text-gray-100 opacity-0 md:text-xl"
           style={{ animationDelay: "0.25s", animationFillMode: "forwards" }}
         >
-          <Balancer>Welcome to the Chess Revolution</Balancer>
+          
+          <Balancer> Welcome to the Chess <span className="text-cyan-400 italic">Revolution</span></Balancer>
+
         </p>
         <div
           className="mx-auto mt-6 flex animate-fade-up items-center justify-center space-x-5 opacity-0"
