@@ -31,8 +31,8 @@ export default function NavBar({ session }: { session: Session | null }) {
               <UserDropdown session={session} />
             ) : (
               <button
-                className="rounded-full border border-black bg-black p-1.5 px-4 text-sm text-white transition-all hover:bg-white hover:text-black"
-                onClick={() =>
+              className="group flex max-w-fit items-center justify-center space-x-2 rounded-full border border-black bg-black px-5 py-2 text-sm text-white transition-colors hover:bg-slate-800 hover:text-white"
+              onClick={() =>
                   (window.location.href = "https://app.chess.fish/")
                 }
               >
