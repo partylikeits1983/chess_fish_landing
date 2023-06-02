@@ -6,6 +6,8 @@ import WebVitals from "@/components/home/web-vitals";
 import ComponentGrid from "@/components/home/component-grid";
 import Image from "next/image";
 
+import Logo from "./logo";
+
 export default async function Home() {
   return (
     <>
@@ -58,11 +60,7 @@ export default async function Home() {
             </p>
           </a>
         </div>
-        <img
-          src={new URL("../public/stockfish.png", import.meta.url).toString()}
-          alt="Stockfish Icon"
-          // style={{ maxWidth: '40%', maxHeight: '40%' }}
-        />
+        <Logo/>
       </div>
     </>
   );

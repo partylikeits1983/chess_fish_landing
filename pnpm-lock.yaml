@@ -59,6 +59,9 @@ dependencies:
   next-auth:
     specifier: 4.22.1
     version: 4.22.1(next@13.3.4)(react-dom@18.2.0)(react@18.2.0)
+  pnpm:
+    specifier: ^8.6.0
+    version: 8.6.0
   react:
     specifier: 18.2.0
     version: 18.2.0
@@ -2989,6 +2992,12 @@ packages:
     resolution: {integrity: sha512-8V9+HQPupnaXMA23c5hvl69zXvTwTzyAYasnkb0Tts4XvO4CliqONMOnvlq26rkhLC3nWDFBJf73LU1e1VZLaQ==}
     engines: {node: '>= 6'}
     dev: true
+
+  /pnpm@8.6.0:
+    resolution: {integrity: sha512-uMaWGXlvG+m5NIJaR4JEEenChbg+1AP4zVpqs4PEcZg4uH+lXMTd/X/lirKZA+TC0w0d+++y3btINcwyKsuwAA==}
+    engines: {node: '>=16.14'}
+    hasBin: true
+    dev: false
 
   /postcss-import@15.1.0(postcss@8.4.23):
     resolution: {integrity: sha512-hpr+J05B2FVYUAXHeK1YyI267J/dDDhMU6B6civm8hSY1jYJnBXxzKDKDswzJmtLHryrjhnDjqqp/49t8FALew==}
