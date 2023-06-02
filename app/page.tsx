@@ -28,7 +28,7 @@ export default async function Home() {
           <Balancer>Play Chess on the Blockchain</Balancer>
         </h1>
         <p
-          className="mt-6 animate-fade-up text-center text-gray-500 opacity-0 md:text-xl"
+          className="mt-6 animate-fade-up text-center text-gray-100 opacity-0 md:text-xl"
           style={{ animationDelay: "0.25s", animationFillMode: "forwards" }}
         >
           <Balancer>Welcome to the Chess Revolution</Balancer>
