@@ -15,8 +15,8 @@ function Logo() {
       const imageCenterX = image.offsetLeft + image.offsetWidth / 2;
       const imageCenterY = image.offsetTop + image.offsetHeight / 2;
 
-      const angleX = (mouseY - imageCenterY) * 0.014;
-      const angleY = (mouseX - imageCenterX) * -0.013;
+      const angleX = (mouseY - imageCenterY) * 0.02;
+      const angleY = (mouseX - imageCenterX) * -0.02;
 
       image.style.transform = `rotateX(${angleX}deg) rotateY(${angleY}deg)`;
     }
