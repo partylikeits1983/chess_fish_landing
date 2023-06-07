@@ -16,9 +16,7 @@ export default function NavBar({ session }: { session: Session | null }) {
       <SignInModal />
       <div
         className={`fixed top-0 w-full ${
-          scrolled
-            ? ""
-            : "bg-white/0"
+          scrolled ? "" : "bg-white/0"
         } z-30 transition-all`}
       >
         <div className="mx-5 flex h-16 max-w-screen-xl items-center justify-between xl:mx-auto">
@@ -31,8 +29,8 @@ export default function NavBar({ session }: { session: Session | null }) {
               <UserDropdown session={session} />
             ) : (
               <button
-              className="group flex max-w-fit items-center justify-center space-x-2 rounded-full border border-black bg-black px-5 py-2 text-sm text-white transition-colors hover:bg-slate-800 hover:text-white"
-              onClick={() =>
+                className="group flex max-w-fit items-center justify-center space-x-2 rounded-full border border-black bg-black px-5 py-2 text-sm text-white transition-colors hover:bg-slate-800 hover:text-white"
+                onClick={() =>
                   (window.location.href = "https://app.chess.fish/")
                 }
               >

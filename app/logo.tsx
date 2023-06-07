@@ -1,6 +1,6 @@
-'use client'
+"use client";
 
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef } from "react";
 
 function Logo() {
   const [loaded, setLoaded] = useState(false);
@@ -20,7 +20,7 @@ function Logo() {
 
       image.style.transform = `rotateX(${angleX}deg) rotateY(${angleY}deg)`;
     }
-  }
+  };
 
   const handleImageLoad = () => {
     setLoaded(true);
@@ -34,7 +34,7 @@ function Logo() {
   }, []); // Run only once after initial render
 
   const imageUrl = new URL("../public/stockfish.png", import.meta.url);
-  imageUrl.searchParams.set('v', Date.now().toString()); // add timestamp to url
+  imageUrl.searchParams.set("v", Date.now().toString()); // add timestamp to url
 
   return (
     <div>
@@ -44,7 +44,7 @@ function Logo() {
         alt="Stockfish Icon"
         onMouseMove={handleMouseMove}
         onLoad={handleImageLoad}
-        style={loaded ? {} : { filter: 'blur(8px)' }}
+        style={loaded ? {} : { filter: "blur(8px)" }}
       />
     </div>
   );
