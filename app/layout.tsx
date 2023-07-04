@@ -9,13 +9,15 @@ import { Suspense } from "react";
 export const metadata = {
   title: "Chess.fish - Chess on the blockchain",
   description:
-    "Chess.fish is an innovative platform that combines the strategic depth of chess with the exciting world of blockchain and smart contracts. Play chess for money, enhance your skills, and earn rewards.",
+    "Chess.fish is an innovative platform that combines the strategic depth of chess with the exciting world of blockchain and smart contracts. Play chess on the blockchain for crypto, sharpen your skills, and earn rewards.",
+    
   twitter: {
     card: "summary_large_image",
     title: "Chess.fish - Chess on the blockchain",
     description:
       "Join Chess.fish, the pioneering blockchain protocol where you can earn crytpocurrency by playing chess against others. Experience the fusion of chess strategy and blockchain technology.",
     creator: "@Alexander John Lee",
+
   },
   metadataBase: new URL("https://chess.fish"),
   themeColor: "#FFF",
