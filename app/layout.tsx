@@ -7,17 +7,17 @@ import Footer from "@/components/layout/footer";
 import { Suspense } from "react";
 
 export const metadata = {
-  title: "Chess.fish",
+  title: "Chess.fish - Chess on the blockchain",
   description:
-    "Precedent is the all-in-one solution for your Next.js project. It includes a design system, authentication, analytics, and more.",
+    "Chess.fish is an innovative platform that combines the strategic depth of chess with the exciting world of blockchain and smart contracts. Play chess for money, enhance your skills, and earn rewards.",
   twitter: {
     card: "summary_large_image",
-    title: "Chess Fish",
+    title: "Chess.fish - Chess on the blockchain",
     description:
-      "Precedent is the all-in-one solution for your Next.js project. It includes a design system, authentication, analytics, and more.",
+      "Join Chess.fish, the pioneering blockchain protocol where you can earn crytpocurrency by playing chess against others. Experience the fusion of chess strategy and blockchain technology.",
     creator: "@Alexander John Lee",
   },
-  metadataBase: new URL("https://precedent.dev"),
+  metadataBase: new URL("https://chess.fish"),
   themeColor: "#FFF",
 };
 // <div className="fixed h-screen w-full bg-gradient-to-br from-indigo-100 via-white to-pink-100" />
