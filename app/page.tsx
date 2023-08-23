@@ -64,15 +64,11 @@ export default async function Home() {
             </p>
           </a>
         </div>
-        
-        <div className="my-10 grid w-full max-w-screen-xl h-auto animate-fade-up">
-<Logo/>
 
-</div>
+        <div className="my-10 grid h-auto w-full max-w-screen-xl animate-fade-up">
+          <Logo />
+        </div>
       </div>
-
-
-
     </>
   );
 }

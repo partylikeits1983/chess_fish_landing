@@ -3,7 +3,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./fadeEffect.css"; // Assuming you have fadeEffect.css for the styling
 
-
 function Logo() {
   const [loaded, setLoaded] = useState(false);
   const imgRef = useRef<HTMLImageElement>(null);
@@ -42,7 +41,11 @@ function Logo() {
     <div className="image-container">
       <img
         ref={imgRef}
-        src={loaded ? imageUrl.toString() : "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"} 
+        src={
+          loaded
+            ? imageUrl.toString()
+            : "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+        }
         // Using a 1x1 transparent gif as placeholder
         alt="Stockfish Icon"
         onMouseMove={handleMouseMove}
