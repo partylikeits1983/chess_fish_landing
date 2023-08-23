@@ -29,8 +29,31 @@ export default async function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <style dangerouslySetInnerHTML={{ 
+            __html: `
+                body {
+                  font-family: "Inter", sans-serif;
+                }
+                .background-animate {
+                  background-size: 400%;
+                  -webkit-animation: AnimationName 10s ease infinite;
+                  -moz-animation: AnimationName 10s ease infinite;
+                  animation: AnimationName 10s ease infinite;
+                }
+                @keyframes AnimationName {
+                  0%, 100% {
+                    background-position: 0% 0%;
+                  }
+                  50% {
+                    background-position: 100% 100%;
+                  }
+                }
+            ` 
+        }} />
+      </head>
       <body className={cx(sfPro.variable, inter.variable)}>
-        <div className="fixed h-screen w-full bg-gradient-to-br from-gray-700 to-green-800" />
+        <div className="fixed h-screen w-full bg-gradient-to-r from-slate-900 via-green-800 to-slate-800 background-animate" />
         <Suspense fallback="...">
           {/* @ts-expect-error Server Component */}
           <Nav />
@@ -44,3 +67,4 @@ export default async function RootLayout({
     </html>
   );
 }
+
