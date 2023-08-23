@@ -1,6 +1,8 @@
 "use client";
 
 import React, { useState, useEffect, useRef } from "react";
+import "./fadeEffect.css"; // Assuming you have fadeEffect.css for the styling
+
 
 function Logo() {
   const [loaded, setLoaded] = useState(false);
@@ -15,8 +17,8 @@ function Logo() {
       const imageCenterX = image.offsetLeft + image.offsetWidth / 2;
       const imageCenterY = image.offsetTop + image.offsetHeight / 2;
 
-      const angleX = (mouseY - imageCenterY) * 0.02;
-      const angleY = (mouseX - imageCenterX) * -0.02;
+      const angleX = (mouseY - imageCenterY) * 0.01;
+      const angleY = (mouseX - imageCenterX) * -0.01;
 
       image.style.transform = `rotateX(${angleX}deg) rotateY(${angleY}deg)`;
     }
@@ -37,14 +39,15 @@ function Logo() {
   imageUrl.searchParams.set("v", Date.now().toString()); // add timestamp to url
 
   return (
-    <div>
+    <div className="image-container">
       <img
         ref={imgRef}
-        src={imageUrl.toString()}
+        src={loaded ? imageUrl.toString() : "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"} 
+        // Using a 1x1 transparent gif as placeholder
         alt="Stockfish Icon"
         onMouseMove={handleMouseMove}
         onLoad={handleImageLoad}
-        style={loaded ? {} : { filter: "blur(8px)" }}
+        className={loaded ? "loaded" : ""}
       />
     </div>
   );

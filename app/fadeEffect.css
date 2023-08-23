@@ -1,0 +1,14 @@
+.image-container {
+    position: relative;
+  }
+  
+  .image-container img {
+    max-width: 100%;  
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .image-container img.loaded {
+    opacity: 1;
+  }
+  
