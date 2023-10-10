@@ -34,7 +34,7 @@ function Logo() {
     }
   }, []); // Run only once after initial render
 
-  const imageUrl = new URL("../public/stockfish.png", import.meta.url);
+  const imageUrl = new URL("../public/chessfish.png", import.meta.url);
   imageUrl.searchParams.set("v", Date.now().toString()); // add timestamp to url
 
   return (
@@ -47,7 +47,7 @@ function Logo() {
             : "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
         }
         // Using a 1x1 transparent gif as placeholder
-        alt="Stockfish Icon"
+        alt="Chess Fish Icon"
         onMouseMove={handleMouseMove}
         onLoad={handleImageLoad}
         className={loaded ? "loaded" : ""}
