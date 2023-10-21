@@ -9,7 +9,7 @@ import { Suspense } from "react";
 export const metadata = {
   title: "Chess.fish - Chess on the blockchain",
   description:
-    "Chess.fish is an innovative platform that combines the strategic depth of chess with the exciting world of blockchain and smart contracts. Play chess on the blockchain for crypto, sharpen your skills, and earn rewards.",
+    "Chess.fish is the leading platform for playing chess on the blockchain. Dive into the fusion of classic strategy with modern blockchain technology and smart contracts. Play chess, earn crypto rewards, and hone your skills in the exciting intersection of chess and cryptocurrency.",
 
   twitter: {
     card: "summary_large_image",
