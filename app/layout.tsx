@@ -32,9 +32,11 @@ export default async function RootLayout({
       <head>
         <style dangerouslySetInnerHTML={{ 
             __html: `
-                body {
-                  font-family: "Inter", sans-serif;
-                }
+            body {
+              background: linear-gradient(to right, slate-900, green-800, slate-800);
+              min-height: 100vh; /* Adjust based on your requirements */
+              /* Other styles */
+            }
                 .background-animate {
                   background-size: 400%;
                   -webkit-animation: AnimationName 10s ease infinite;
