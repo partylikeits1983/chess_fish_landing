@@ -34,43 +34,43 @@ export default async function RootLayout({
         <style dangerouslySetInnerHTML={{ 
             __html: `
             body {
-              background: linear-gradient(to right, slate-900, green-800, slate-800);
+              background: linear-gradient(to right, slate-900, green-800, slate-800), black; /* Overlay the gradient on a black background */
               min-height: 100vh; /* Adjust based on your requirements */
               /* Other styles */
             }
-                .background-animate {
-                  background-size: 400%;
-                  -webkit-animation: AnimationName 10s ease infinite;
-                  -moz-animation: AnimationName 10s ease infinite;
-                  animation: AnimationName 10s ease infinite;
-                }
-                @keyframes AnimationName {
-                  0%, 100% {
-                    background-position: 0% 0%;
-                  }
-                  50% {
-                    background-position: 100% 100%;
-                  }
-                }
+            .background-animate {
+              background-size: 400%;
+              -webkit-animation: AnimationName 10s ease infinite;
+              -moz-animation: AnimationName 10s ease infinite;
+              animation: AnimationName 10s ease infinite;
+            }
+            @keyframes AnimationName {
+              0%, 100% {
+                background-position: 0% 0%;
+              }
+              50% {
+                background-position: 100% 100%;
+              }
+            }
             ` 
         }} />
       </head>
       <body className={cx(sfPro.variable, inter.variable)}>
-  <ClientWrapper> {/* Wrap content with ClientWrapper */}
-    <div className="fixed h-screen w-full bg-gradient-to-r from-slate-900 via-green-800 to-slate-800 background-animate" />
-    <Suspense fallback="...">
-      {/* @ts-expect-error Server Component */}
-      <Nav />
-    </Suspense>
-    <main className="flex min-h-screen w-full flex-col items-center justify-center py-32">
-      {children}
-    </main>
-    <Footer />
-    <Analytics />
-  </ClientWrapper> {/* Closing tag for ClientWrapper */}
-</body>
-
+        <ClientWrapper> {/* Wrap content with ClientWrapper */}
+          <div className="fixed h-screen w-full bg-gradient-to-r from-slate-900 via-green-800 to-slate-800 background-animate" />
+          <Suspense fallback="...">
+            {/* @ts-expect-error Server Component */}
+            <Nav />
+          </Suspense>
+          <main className="flex min-h-screen w-full flex-col items-center justify-center py-32">
+            {children}
+          </main>
+          <Footer />
+          <Analytics />
+        </ClientWrapper> {/* Closing tag for ClientWrapper */}
+      </body>
     </html>
   );
 }
+
 
