@@ -1,11 +1,5 @@
-import Card from "@/components/home/card";
 import Balancer from "react-wrap-balancer";
-import { DEPLOY_URL } from "@/lib/constants";
 import { Github, Twitter } from "@/components/shared/icons";
-import WebVitals from "@/components/home/web-vitals";
-import ComponentGrid from "@/components/home/component-grid";
-import Image from "next/image";
-
 import Logo from "./logo";
 
 export default async function Home() {
@@ -20,7 +14,7 @@ export default async function Home() {
         >
           <Twitter className="h-5 w-5 text-[#1d9bf0]" />
           <p className="text-sm font-semibold text-[#1d9bf0]">
-            Introducing Chess.fish
+            Introducing ChessFish
           </p>
         </a>
         <h1
@@ -66,45 +60,10 @@ export default async function Home() {
         </div>
 
         <div className="my-10 grid h-auto w-full max-w-screen-xl animate-fade-up">
-          <Logo />
+         
         </div>
       </div>
     </>
   );
 }
 
-const products = [
-  {
-    title: "Product 1",
-    description: "This is a description of product 1.",
-    image: "url-to-image-1.jpg",
-  },
-  {
-    title: "Product 2",
-    description: "This is a description of product 2.",
-    image: "url-to-image-2.jpg",
-  },
-  //...other products
-];
-
-const features = [
-  {
-    title: "Beautiful, reusable components",
-    description:
-      "Pre-built beautiful, a11y-first components, powered by [Tailwind CSS](https://tailwindcss.com/), [Radix UI](https://www.radix-ui.com/), and [Framer Motion](https://framer.com/motion)",
-    large: true,
-    demo: (
-      <img
-        src={new URL("../public/position.png", import.meta.url).toString()}
-        alt="Precedent Logo"
-      />
-    ),
-  },
-
-  {
-    title: "Performance first",
-    description:
-      "Built on [Next.js](https://nextjs.org/) primitives like `@next/font` and `next/image` for stellar performance.",
-    demo: <WebVitals />,
-  },
-];

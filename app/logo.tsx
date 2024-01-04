@@ -34,7 +34,7 @@ function Logo() {
     }
   }, []); // Run only once after initial render
 
-  const imageUrl = new URL("../public/chessfish.png", import.meta.url);
+  const imageUrl = new URL("../public/ChessFishLogo1000x1000.png", import.meta.url);
   imageUrl.searchParams.set("v", Date.now().toString()); // add timestamp to url
 
   return (
