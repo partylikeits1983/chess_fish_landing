@@ -34,7 +34,7 @@ export default function NavBar({ session }: { session: Session | null }) {
                   (window.location.href = "https://app.chess.fish/")
                 }
               >
-                Open App
+                Launch App
               </button>
             )}
           </div>
